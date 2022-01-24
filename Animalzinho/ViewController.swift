@@ -11,22 +11,26 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        campoImagem.image = UIImage(named: "golfinho_fofinho")
+        errorMessage.addAction(UIAlertAction(title: "Ok",style: .default, handler: { (action: UIAlertAction!) in }))
+        rightAnswerMessage.addAction(UIAlertAction(title: "Ok",style: .default, handler: { (action: UIAlertAction!) in }))
     }
 
     let descubraOAnimalzinho: String = "golfinho_fofinho"
-    let dialogMessage = UIAlertController(title: "Atenção", message: "Presta atenção seu burro", preferredStyle: .alert)
+    let errorMessage = UIAlertController(title: "Atenção", message: "Presta atenção seu burro", preferredStyle: .alert)
+    let rightAnswerMessage = UIAlertController(title: "Atenção", message: "10 pontos para a Grifinória", preferredStyle: .alert)
+    
     @IBOutlet weak var campoImagem: UIImageView!
     @IBOutlet weak var button: UIButton!
      
     @IBOutlet weak var golfinho_fofinho: UITextField!
     @IBAction func carregarImagem(_ sender: Any) {
-        
+       
         if descubraOAnimalzinho == golfinho_fofinho.text {
-            campoImagem.image = UIImage(named: "golfinho_fofinho")
+            self.present(rightAnswerMessage, animated: true, completion: nil)
         }
         else {
-            self.present(dialogMessage, animated: true, completion: nil)
+            self.present(errorMessage, animated: true, completion: nil)
         }
     }
     

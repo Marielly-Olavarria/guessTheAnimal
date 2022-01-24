@@ -13,7 +13,6 @@
 		184A126F2790F2B500DBC55A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184A126D2790F2B500DBC55A /* Main.storyboard */; };
 		184A12712790F2B700DBC55A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184A12702790F2B700DBC55A /* Assets.xcassets */; };
 		184A12742790F2B700DBC55A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184A12722790F2B700DBC55A /* LaunchScreen.storyboard */; };
-		184A127D2790FB0C00DBC55A /* golfinho_fofinho.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 184A127C2790FB0C00DBC55A /* golfinho_fofinho.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		184A12702790F2B700DBC55A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184A12732790F2B700DBC55A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184A12752790F2B700DBC55A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		184A127C2790FB0C00DBC55A /* golfinho_fofinho.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = golfinho_fofinho.jpeg; path = ../../../../Downloads/golfinho_fofinho.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 				184A12672790F2B500DBC55A /* AppDelegate.swift */,
 				184A12692790F2B500DBC55A /* SceneDelegate.swift */,
 				184A126B2790F2B500DBC55A /* ViewController.swift */,
-				184A127C2790FB0C00DBC55A /* golfinho_fofinho.jpeg */,
 				184A126D2790F2B500DBC55A /* Main.storyboard */,
 				184A12702790F2B700DBC55A /* Assets.xcassets */,
 				184A12722790F2B700DBC55A /* LaunchScreen.storyboard */,
@@ -130,7 +127,6 @@
 				184A12742790F2B700DBC55A /* LaunchScreen.storyboard in Resources */,
 				184A12712790F2B700DBC55A /* Assets.xcassets in Resources */,
 				184A126F2790F2B500DBC55A /* Main.storyboard in Resources */,
-				184A127D2790FB0C00DBC55A /* golfinho_fofinho.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
