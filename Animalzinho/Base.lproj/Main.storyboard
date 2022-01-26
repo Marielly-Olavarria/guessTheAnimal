@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,50 +15,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descobrindoOAnimalzinho" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Er-Bl-fPS">
-                                <rect key="frame" x="55" y="273" width="338" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra os animais" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Er-Bl-fPS">
+                                <rect key="frame" x="20" y="110" width="388" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="golfinho_fofinho" translatesAutoresizingMaskIntoConstraints="NO" id="hhm-hh-FSv">
-                                <rect key="frame" x="96" y="311" width="240" height="128"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrx-gP-vQr">
-                                <rect key="frame" x="96" y="524" width="260" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrx-gP-vQr">
+                                <rect key="frame" x="84" y="550" width="260" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRy-Ml-OVc">
-                                <rect key="frame" x="96" y="663" width="276" height="30"/>
-                                <state key="normal" title="check answere"/>
+                                <rect key="frame" x="20" y="673" width="388" height="48"/>
+                                <color key="backgroundColor" red="0.60402565863630442" green="0.93118179161101466" blue="0.95417746113989632" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Verificar Resposta">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="carregarImagem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="frk-rC-Sa3"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="golfinho_fofinho" translatesAutoresizingMaskIntoConstraints="NO" id="hhm-hh-FSv">
+                                <rect key="frame" x="20" y="183" width="388" height="312"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="312" id="Ryw-5Y-mtk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <color key="backgroundColor" red="0.88916916342526264" green="0.9871726363127783" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hhm-hh-FSv" secondAttribute="trailing" constant="92" id="6jQ-Fp-tXB"/>
-                            <constraint firstItem="vRy-Ml-OVc" firstAttribute="top" secondItem="hrx-gP-vQr" secondAttribute="bottom" constant="105" id="BFn-u2-JHu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vRy-Ml-OVc" secondAttribute="trailing" constant="56" id="HVS-1k-5Ap"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hrx-gP-vQr" secondAttribute="trailing" constant="72" id="I17-mZ-aBe"/>
-                            <constraint firstItem="hhm-hh-FSv" firstAttribute="top" secondItem="3Er-Bl-fPS" secondAttribute="bottom" constant="8" symbolic="YES" id="I8L-ZW-H6W"/>
-                            <constraint firstItem="3Er-Bl-fPS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="229" id="Q8s-HL-v1L"/>
-                            <constraint firstItem="vRy-Ml-OVc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="SYe-LC-9vI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Er-Bl-fPS" secondAttribute="trailing" constant="35" id="Uvl-mf-kpT"/>
-                            <constraint firstItem="hrx-gP-vQr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="mUZ-kP-Unm"/>
-                            <constraint firstItem="hhm-hh-FSv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="rm7-7E-7yb"/>
-                            <constraint firstItem="3Er-Bl-fPS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="tIt-nW-OdK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vRy-Ml-OVc" secondAttribute="bottom" constant="199" id="the-ry-vfT"/>
-                            <constraint firstItem="hrx-gP-vQr" firstAttribute="top" secondItem="hhm-hh-FSv" secondAttribute="bottom" constant="85" id="ziQ-30-QkQ"/>
+                            <constraint firstItem="hrx-gP-vQr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="2zs-4W-ivV"/>
+                            <constraint firstItem="vRy-Ml-OVc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3Bo-ck-Fe8"/>
+                            <constraint firstItem="vRy-Ml-OVc" firstAttribute="top" secondItem="hrx-gP-vQr" secondAttribute="bottom" constant="89" id="4nX-44-Zds"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hrx-gP-vQr" secondAttribute="trailing" constant="84" id="BKX-X2-bd9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hhm-hh-FSv" secondAttribute="trailing" constant="20" id="CG5-Hi-ki1"/>
+                            <constraint firstItem="hrx-gP-vQr" firstAttribute="top" secondItem="hhm-hh-FSv" secondAttribute="bottom" constant="55" id="M5A-2B-aD6"/>
+                            <constraint firstItem="hhm-hh-FSv" firstAttribute="top" secondItem="3Er-Bl-fPS" secondAttribute="bottom" constant="37" id="Sy3-Uj-78t"/>
+                            <constraint firstItem="3Er-Bl-fPS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bIx-qF-lG0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vRy-Ml-OVc" secondAttribute="trailing" constant="20" id="cGH-QF-a3y"/>
+                            <constraint firstItem="hhm-hh-FSv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lZk-Wx-kdk"/>
+                            <constraint firstItem="3Er-Bl-fPS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="nBk-EM-thp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Er-Bl-fPS" secondAttribute="trailing" constant="20" id="xpg-WN-uyI"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="vRy-Ml-OVc" id="ji5-DF-IFj"/>
-                        <outlet property="campoImagem" destination="hhm-hh-FSv" id="bcI-Od-Yki"/>
-                        <outlet property="golfinho_fofinho" destination="hrx-gP-vQr" id="8OA-yu-fMJ"/>
+                        <outlet property="imageField" destination="hhm-hh-FSv" id="bcI-Od-Yki"/>
+                        <outlet property="textField" destination="hrx-gP-vQr" id="8OA-yu-fMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -69,8 +80,5 @@
     </scenes>
     <resources>
         <image name="golfinho_fofinho" width="300" height="168"/>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
