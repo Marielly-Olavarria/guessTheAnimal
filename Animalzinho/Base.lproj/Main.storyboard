@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ua4-Bb-v4h">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Guess The Animal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animalzinho" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GuessTheAnimalViewController" id="BYZ-38-t0r" customClass="GuessTheAnimalViewController" customModule="Animalzinho" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +41,7 @@
                                     <action selector="carregarImagem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="frk-rC-Sa3"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="golfinho_fofinho" translatesAutoresizingMaskIntoConstraints="NO" id="hhm-hh-FSv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="hhm-hh-FSv">
                                 <rect key="frame" x="20" y="183" width="388" height="312"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="312" id="Ryw-5Y-mtk"/>
@@ -67,6 +68,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Er-Bl-fPS" secondAttribute="trailing" constant="20" id="xpg-WN-uyI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IB2-oP-39e"/>
                     <connections>
                         <outlet property="button" destination="vRy-Ml-OVc" id="ji5-DF-IFj"/>
                         <outlet property="imageField" destination="hhm-hh-FSv" id="bcI-Od-Yki"/>
@@ -75,10 +77,151 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25.233644859813083" y="7.7753779697624195"/>
+            <point key="canvasLocation" x="2400" y="0.0"/>
+        </scene>
+        <!--Level Two View Controller-->
+        <scene sceneID="Q32-Dm-NGr">
+            <objects>
+                <viewController storyboardIdentifier="LevelTwoViewController" id="JMy-8x-PYx" customClass="LevelTwoViewController" customModule="Animalzinho" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bdi-cq-dp3">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27u-Rz-y83">
+                                <rect key="frame" x="133" y="433" width="162" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LQo-lN-XR5"/>
+                        <color key="backgroundColor" red="0.91080743070000003" green="0.91649383309999999" blue="0.74616354699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="27u-Rz-y83" firstAttribute="centerY" secondItem="Bdi-cq-dp3" secondAttribute="centerY" id="019-c7-dY7"/>
+                            <constraint firstItem="27u-Rz-y83" firstAttribute="centerX" secondItem="Bdi-cq-dp3" secondAttribute="centerX" id="4O8-yh-9aJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yk2-gv-a2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3124.7663551401865" y="0.0"/>
+        </scene>
+        <!--Guess The City View Controller-->
+        <scene sceneID="Fti-JK-8Nz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUS-Hh-jRb" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="GuessTheCityViewController" id="duM-Cg-uJh" customClass="GuessTheCityViewController" customModule="Animalzinho" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sqg-ky-rng">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra as cidades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udb-NW-m3T">
+                                <rect key="frame" x="20" y="110" width="388" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVf-w1-gzH">
+                                <rect key="frame" x="84" y="550" width="260" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1e-5D-pTP">
+                                <rect key="frame" x="20" y="673" width="388" height="48"/>
+                                <color key="backgroundColor" red="0.95417746110000001" green="0.73725189552478887" blue="0.44284119060644911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Verificar Resposta">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="carregarImagem:" destination="duM-Cg-uJh" eventType="touchUpInside" id="ehC-58-Gmu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="vbm-hr-rNI">
+                                <rect key="frame" x="20" y="183" width="388" height="312"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="312" id="3qf-c1-NOe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VlT-an-dHm"/>
+                        <color key="backgroundColor" red="0.90826326974345495" green="0.91949339587279044" blue="0.74409726862350023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.87623881330393782" green="0.80724820597043545" blue="0.1640381463741836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VlT-an-dHm" firstAttribute="trailing" secondItem="vbm-hr-rNI" secondAttribute="trailing" constant="20" id="3C4-LC-1An"/>
+                            <constraint firstItem="VlT-an-dHm" firstAttribute="trailing" secondItem="OVf-w1-gzH" secondAttribute="trailing" constant="84" id="44y-1w-5OK"/>
+                            <constraint firstItem="OVf-w1-gzH" firstAttribute="leading" secondItem="VlT-an-dHm" secondAttribute="leading" constant="84" id="4jM-er-apE"/>
+                            <constraint firstItem="T1e-5D-pTP" firstAttribute="leading" secondItem="VlT-an-dHm" secondAttribute="leading" constant="20" id="5OT-nW-tjc"/>
+                            <constraint firstItem="vbm-hr-rNI" firstAttribute="top" secondItem="udb-NW-m3T" secondAttribute="bottom" constant="37" id="69t-AJ-d0F"/>
+                            <constraint firstItem="VlT-an-dHm" firstAttribute="trailing" secondItem="T1e-5D-pTP" secondAttribute="trailing" constant="20" id="CaA-Ll-Oro"/>
+                            <constraint firstItem="udb-NW-m3T" firstAttribute="top" secondItem="VlT-an-dHm" secondAttribute="top" constant="66" id="ChM-eh-N4u"/>
+                            <constraint firstItem="T1e-5D-pTP" firstAttribute="top" secondItem="OVf-w1-gzH" secondAttribute="bottom" constant="89" id="Udb-L2-wSW"/>
+                            <constraint firstItem="udb-NW-m3T" firstAttribute="leading" secondItem="VlT-an-dHm" secondAttribute="leading" constant="20" id="WWB-C6-3bg"/>
+                            <constraint firstItem="VlT-an-dHm" firstAttribute="trailing" secondItem="udb-NW-m3T" secondAttribute="trailing" constant="20" id="aZb-Gr-lV9"/>
+                            <constraint firstItem="vbm-hr-rNI" firstAttribute="leading" secondItem="VlT-an-dHm" secondAttribute="leading" constant="20" id="fc8-iO-dPG"/>
+                            <constraint firstItem="OVf-w1-gzH" firstAttribute="top" secondItem="vbm-hr-rNI" secondAttribute="bottom" constant="55" id="trC-nx-kst"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="T1e-5D-pTP" id="7UZ-Si-nOD"/>
+                        <outlet property="imageField" destination="vbm-hr-rNI" id="3eA-4w-PYI"/>
+                        <outlet property="textField" destination="OVf-w1-gzH" id="Skg-A1-2Ip"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3825.700934579439" y="0.0"/>
+        </scene>
+        <!--Level One View Controller-->
+        <scene sceneID="aQM-uv-VUl">
+            <objects>
+                <viewController id="eYo-X1-P4s" customClass="LevelOneViewController" customModule="Animalzinho" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hrj-bw-Sdy">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSd-45-MCr">
+                                <rect key="frame" x="136" y="433" width="156" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hkN-mN-3aU"/>
+                        <color key="backgroundColor" red="0.88976925610000002" green="0.98864895109999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aSd-45-MCr" firstAttribute="centerX" secondItem="hrj-bw-Sdy" secondAttribute="centerX" id="a6w-x4-o6n"/>
+                            <constraint firstItem="aSd-45-MCr" firstAttribute="centerY" secondItem="hrj-bw-Sdy" secondAttribute="centerY" id="jjD-Wx-YIP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iQX-ae-5u4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRz-CP-oTD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690.6542056074766" y="0.0"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Xj-cL-lnb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ua4-Bb-v4h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CbL-Nh-25C">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eYo-X1-P4s" kind="relationship" relationship="rootViewController" id="04k-jX-7Cu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOI-ED-FGS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790.65420560747657" y="0.0"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="golfinho_fofinho" width="300" height="168"/>
-    </resources>
 </document>
